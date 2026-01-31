@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">
+
+<body>
 
 <nav>
   <h2>Jack</h2>
-
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -18,16 +18,18 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-
-  <button id="themeToggle">🌙</button>
 </nav>
 
 <main class="container">
 
-<section id="home" class="reveal">
-  <h1>Jack Samson</h1>
+<!-- HOME -->
+<section id="home" class="section reveal hero">
+  <h1>Hi, I’m <span>Jack Samson</span></h1>
   <h3>Cloud & DevOps Engineer</h3>
-  <p>AWS • Docker • Jenkins • Kubernetes • Terraform • Linux</p>
+  <p>
+    I design, automate, and deploy cloud infrastructure using AWS and modern
+    DevOps practices.
+  </p>
 
   <div class="buttons">
     <a href="#projects" class="btn">View Projects</a>
@@ -35,64 +37,71 @@
   </div>
 </section>
 
-<section id="about" class="reveal">
+<!-- ABOUT -->
+<section id="about" class="section reveal">
   <div class="glass">
     <h2>About Me</h2>
     <p>
-      Cloud and DevOps Engineer with hands-on experience as a System Administrator.
-      Skilled in AWS, CI/CD pipelines, containerization, and Linux administration.
+      I am a Cloud and DevOps Engineer with hands-on experience as a System
+      Administrator. I have worked on real-time infrastructure issues,
+      automation tasks, and deployment pipelines.
     </p>
     <p>
-      Passionate about automation, scalable infrastructure, and continuous learning.
+      My core interest lies in AWS cloud services, CI/CD pipelines, Docker,
+      Terraform, and Linux system administration. I continuously upskill
+      myself to build reliable and scalable cloud solutions.
     </p>
   </div>
 </section>
 
-<section id="skills" class="reveal">
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
   <h2>Skills</h2>
   <div class="grid">
     <div class="card">AWS (EC2, S3, IAM, CloudWatch)</div>
-    <div class="card">Docker</div>
-    <div class="card">Jenkins</div>
-    <div class="card">Kubernetes</div>
-    <div class="card">Terraform</div>
-    <div class="card">Linux</div>
+    <div class="card">Docker & Containerization</div>
+    <div class="card">Jenkins (CI/CD)</div>
+    <div class="card">Kubernetes (Basics)</div>
+    <div class="card">Terraform (IaC)</div>
+    <div class="card">Linux Administration</div>
     <div class="card">Git & GitHub</div>
     <div class="card">Jira & ServiceNow</div>
   </div>
 </section>
 
-<section id="projects" class="reveal">
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
   <h2>Projects</h2>
   <div class="grid">
 
-    <div class="card">
+    <div class="card project-card">
       <h3>CI/CD Login Portal on AWS</h3>
-      <p>Automated Jenkins pipeline deploying application to AWS EC2.</p>
-      <div class="links">
-        <a href="https://github.com/jacksamson1503" target="_blank">GitHub</a>
-        <a href="http://YOUR-EC2-PUBLIC-IP" target="_blank">Live Demo</a>
-      </div>
+      <p>
+        Built an automated CI/CD pipeline using Jenkins to deploy a login portal
+        application on AWS EC2 with GitHub integration.
+      </p>
+      <span>Jenkins • AWS • Linux • GitHub</span>
     </div>
 
-    <div class="card">
-      <h3>Frontend App Deployment</h3>
-      <p>Deployed frontend app on AWS EC2 with Linux & Nginx.</p>
-      <div class="links">
-        <a href="https://github.com/jacksamson1503" target="_blank">GitHub</a>
-        <a href="http://YOUR-EC2-PUBLIC-IP" target="_blank">Live Demo</a>
-      </div>
+    <div class="card project-card">
+      <h3>Frontend Web Application Deployment</h3>
+      <p>
+        Deployed a frontend web application on AWS EC2, configured Linux server,
+        security groups, and basic monitoring.
+      </p>
+      <span>AWS EC2 • Linux • Git</span>
     </div>
 
   </div>
 </section>
 
-<section id="contact" class="reveal">
-  <div class="glass">
-    <h2>Contact</h2>
-    <p>Email: jacksamsonc@gmail.com</p>
-    <p>GitHub: github.com/jacksamson1503</p>
-    <p>Location: Bangalore, India</p>
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <div class="glass contact">
+    <h2>Let’s Connect</h2>
+    <p>📧 jacksamsonc@gmail.com</p>
+    <p>💻 github.com/jacksamson1503</p>
+    <p>📍 Bangalore, India</p>
   </div>
 </section>
 
