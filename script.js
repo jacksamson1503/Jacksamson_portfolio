@@ -1,8 +1,8 @@
-const reveals = document.querySelectorAll(".reveal");
+const sections = document.querySelectorAll(".reveal");
 
 const revealOnScroll = () => {
   const windowHeight = window.innerHeight;
-  reveals.forEach(section => {
+  sections.forEach(section => {
     const top = section.getBoundingClientRect().top;
     if (top < windowHeight - 100) {
       section.classList.add("active");
