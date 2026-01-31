@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
 <nav>
   <h2>Jack</h2>
+
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -17,17 +18,24 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
+  <button id="themeToggle">🌙</button>
 </nav>
 
-<main>
+<main class="container">
 
-<section id="home">
+<section id="home" class="reveal">
   <h1>Jack Samson</h1>
   <h3>Cloud & DevOps Engineer</h3>
-  <p>AWS | Docker | Jenkins | Kubernetes | Terraform | Linux</p>
+  <p>AWS • Docker • Jenkins • Kubernetes • Terraform • Linux</p>
+
+  <div class="buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
+  </div>
 </section>
 
-<section id="about">
+<section id="about" class="reveal">
   <div class="glass">
     <h2>About Me</h2>
     <p>
@@ -40,7 +48,7 @@
   </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="reveal">
   <h2>Skills</h2>
   <div class="grid">
     <div class="card">AWS (EC2, S3, IAM, CloudWatch)</div>
@@ -54,21 +62,32 @@
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
   <h2>Projects</h2>
   <div class="grid">
+
     <div class="card">
       <h3>CI/CD Login Portal on AWS</h3>
       <p>Automated Jenkins pipeline deploying application to AWS EC2.</p>
+      <div class="links">
+        <a href="https://github.com/jacksamson1503" target="_blank">GitHub</a>
+        <a href="http://YOUR-EC2-PUBLIC-IP" target="_blank">Live Demo</a>
+      </div>
     </div>
+
     <div class="card">
       <h3>Frontend App Deployment</h3>
-      <p>Deployed web app on AWS EC2 with Linux server configuration.</p>
+      <p>Deployed frontend app on AWS EC2 with Linux & Nginx.</p>
+      <div class="links">
+        <a href="https://github.com/jacksamson1503" target="_blank">GitHub</a>
+        <a href="http://YOUR-EC2-PUBLIC-IP" target="_blank">Live Demo</a>
+      </div>
     </div>
+
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
   <div class="glass">
     <h2>Contact</h2>
     <p>Email: jacksamsonc@gmail.com</p>
